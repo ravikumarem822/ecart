@@ -1,6 +1,5 @@
 <?php
 
-
 	include 'conn.php';
 	$prd_cat = $_POST['prd_cat'];
 	$prd_brand = $_POST['prd_brand'];

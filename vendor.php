@@ -12,6 +12,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body style="background-image: url(pier-407252_1920.jpg);background-repeat: no-repeat;background-size: cover;">
+   <form action="logout2.php" method="post">
+  <button type="submit" class="btn btn-info" style="position: absolute;z-index: 999;top: 100px;left: 950px;">Logout</button>
+</form>
 	 <form name="register" action="productinsert.php" method="post" class="container" style="height: 700px;width: 500px;margin-top: 50px;">
     <div class="form-group">
     	 <h1 style="font-family: cursive;">Vendor</h1>

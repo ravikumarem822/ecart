@@ -71,7 +71,7 @@
     
     <button type="submit" name="submit" class="btn btn-success" id="btn">Submit</button>
   </form>
-	<img src="<?php echo $profile_pic?>" id="profile_pic" width="150px" height="150px" style="border-radius: 50%;margin-left: 500px;margin-bottom: 100px;">
+	<img src="<?php echo $prd_img?>" id="profile_pic" width="150px" height="150px" style="border-radius: 50%;margin-left: 500px;margin-bottom: 100px;">
          <input type="hidden" id="eid" class="form-control" placeholder="EID" value="<?php echo $prd_id?>" readonly>
 
     <input type="file" name="files[]" id="file" accept=".jpg" required/>
@@ -112,7 +112,7 @@
                
                   var eid=$("#eid").val();
                   var profile=x;
-                   
+                   alert(profile);
                         $.ajax({
                             url:"update_profile_pic.php",
                             type:"post",

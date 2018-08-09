@@ -5,7 +5,7 @@
 	$name = $_POST['name'];
 	$password = $_POST['password'];
 
-	$query="SELECT password FROM `register` WHERE `name`='$name' AND `role`='admin'";
+	$query="SELECT password FROM `register` WHERE `name`='$name' AND `role`='user'";
 	
 	$result=mysqli_query($con,$query);
 	$row=mysqli_fetch_row($result);
@@ -14,13 +14,13 @@
       $a=password_verify($password, $user);
       echo $a;
    	if(password_verify($password, $user)){
-   		$message="successfully register";
-   		header("location: index.php?message=$message");
+   		$message="successfully Logged in";
+   		header("location: product.php?message=$message");
          echo "success";
 
    	}
    else{
-   	$message="not right password";
+   	$message="Please Enter Correct Information";
    		header("location: index.php?message=$message");
      
    } 

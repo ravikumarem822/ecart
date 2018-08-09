@@ -8,10 +8,10 @@
 	$phone_name =$_POST['phone_name'];
 	$phone_img =$_POST['phone_img'];
 	
-	$query="INSERT INTO `product`(`phone_brand`,`phone_desc`,`phone_price`,`phone_name`,`phone_img`) VALUES ('$phone_brand','$phone_desc','$phone_price','$phone_name','$phone_img')";
+	$query="INSERT INTO `phones`(`phone_brand`,`phone_desc`,`phone_price`,`phone_name`,`phone_img`) VALUES ('$phone_brand','$phone_desc','$phone_price','$phone_name','$phone_img')";
 	$result=mysqli_query($con,$query);
 	if ($result) {
-		//header("location: product.php");
+		header("location: phone.php");
 		echo "success";
 	}
 	else{

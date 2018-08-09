@@ -8,10 +8,10 @@
 	$shoe_name =$_POST['shoe_name'];
 	$shoe_img =$_POST['shoe_img'];
 	
-	$query="INSERT INTO `product`(`shoe_brand`,`shoe_desc`,`shoe_price`,`shoe_name`,`shoe_img`) VALUES ('$shoe_brand','$shoe_desc','$shoe_price','$shoe_name','$shoe_img')";
+	$query="INSERT INTO `shoes`(`shoe_brand`,`shoe_desc`,`shoe_price`,`shoe_name`,`shoe_img`) VALUES ('$shoe_brand','$shoe_desc','$shoe_price','$shoe_name','$shoe_img')";
 	$result=mysqli_query($con,$query);
 	if ($result) {
-		//header("location: product.php");
+		header("location: shoe.php");
 		echo "success";
 	}
 	else{

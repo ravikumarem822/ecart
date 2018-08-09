@@ -8,8 +8,6 @@
 	$prd_price =$_POST['prd_price'];
 	$prd_name =$_POST['prd_name'];
 	$prd_img =$_POST['prd_img'];
-
-	
 	
 	$query="INSERT INTO `product`(`prd_cat`,`prd_brand`,`prd_desc`,`prd_price`,`prd_name`,`prd_img`) VALUES ('$prd_cat','$prd_brand','$prd_desc','$prd_price','$prd_name','$prd_img')";
 	$result=mysqli_query($con,$query);

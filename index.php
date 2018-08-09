@@ -16,6 +16,15 @@ Licence URI: https://www.os-templates.com/template-terms
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+  #footer{
+
+  }
+  #profiles{
+
+  }
+
+</style>
 <head>
 <title>Project</title>
 <meta charset="utf-8">
@@ -35,16 +44,16 @@ Licence URI: https://www.os-templates.com/template-terms
           <article>
             <p>Ecart</p>
             <script >alert("<?php $a=$_GET['message'];echo $a;?> ")</script>
-            <h3 class="heading">Buisness is The Main Key to Lead a Good Life</h3>
-            <p>Use Our Products And Enjoy Our Free Services</p>
+            <h3 class="heading">Buisness is One Of The Main Key to Lead a Good Life</h3>
+            <h6>Use Our Products And Enjoy Our Free Services</h6><br>
            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Register</button>
           </article>
         </li>
         <li>
           <article>
-            <p>Lacinia</p>
-            <h3 class="heading"></h3>
-            <p>Non tincidunt dui nullam tortor eget aliquam</p>
+            <p>Ecart</p>
+            <h3 class="heading">Buisness is One Of The Main Key to Lead a Good Life</h3>
+            <h6>Use Our Products And Enjoy Our Free Services</h6><br>
             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Log in</button>
           </article>
         </li>
@@ -73,7 +82,8 @@ Licence URI: https://www.os-templates.com/template-terms
     <div class="fl_right">
       <ul class="nospace">
         <li><a href="index.php">Home<i class="fa fa-lg fa-home"></i></a></li>
-        <li><a href="vendor.html">Vendor Login<i class="fa fa-lg fa-sign-in"></i></a></li>
+        <li><a href="vlogin.php">Vendor Login<i class="fa fa-lg fa-sign-in"></i></a></li>
+        <li><a href="admin.php">Admin Login<i class="fa fa-lg fa-sign-in"></i></a></li>
         </a></li>
       </ul>
     </div>
@@ -92,30 +102,28 @@ Licence URI: https://www.os-templates.com/template-terms
     <nav id="mainav" class="fl_right">
       <ul class="clear">
         <li class="active"><a href="index.php">Home</a></li>
-        <li><a class="drop" href="#">Categories</a>
+        <li><a class="drop">Categories</a>
           <ul>
-            <li><a href=".html">Laptops</a></li>
-            <li><a href=".html">Phones</a></li>
-            <li><a href=".html">Shoes</a></li>
-            <li><a href=".html">TV's</a></li>
-            <li><a href=".html">Memory Cards</a></li>
+            <li><a href="laptops1.php">Laptops</a></li>
+            <li><a href="phones1.php">Phones</a></li>
+            <li><a href="shoes1.php">Shoes</a></li>
+            <li><a href="tvs1.php">TV's</a></li>
+            <li><a href="pendrives1.php">Pen Drives</a></li>
           </ul>
         </li>
-        <li><a class="drop" href="#">Brands</a>
+        <li><a class="drop">Brands</a>
           <ul>
-            <li><a href="#">Sony TV's</a></li>
-            <li><a class="drop" href="#">iphone</a>
-              <ul>
-                <li><a href="#">iphone 7</a></li>
-                <li><a href="#">iphone 8</a></li>
-                <li><a href="#">iphone X</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Nike</a></li>
+            <li><a href="dell1.php">Dell</a></li>
+            <li><a href="iphone1.php">iphone</a></li>
+            <li><a href="hp1.php">Hp</a></li>
+            <li><a href="sony1.php">Sony</a></li>
+            <li><a href="puma1.php">Puma</a></li>
+            <li><a href="sandisk1.php">Sandisk</a></li>
           </ul>
+          <li><a href="#footer">Contact Us</a></li>
+            <li><a href="#profiles">Our Profiles</a></li>
         </li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Our Profiles</a></li>
+       
       </ul>
     </nav>
     <!-- ################################################################################################ -->
@@ -138,12 +146,12 @@ Ekart is tied up with Apollo pharmacy, for the packages to be available for pick
     </div>
     <figure class="one_half">
       <ul class="nospace group">
-        <li class="one_third first btmspace-30"><a href="#"><img src="images\a2.jpg" alt=""></a></li>
-        <li class="one_third btmspace-30"><a href="#"><img src="images\puma2.jpg" alt=""></a></li>
-        <li class="one_third btmspace-30"><a href="#"><img src="images\supra2.jpg" alt=""></a></li>
-        <li class="one_third first"><a href="#"><img src="images\l2.jpg" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="images\hmshirt2.jpg" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="images\lppant2.jpg" alt=""></a></li>
+        <li class="one_third first btmspace-30"><img src="images\a2.jpg" alt=""></li>
+        <li class="one_third btmspace-30"><img src="images\puma2.jpg" alt=""></li>
+        <li class="one_third btmspace-30"><img src="images\supra2.jpg" alt=""></li>
+        <li class="one_third first"><img src="images\l2.jpg" alt=""></li>
+        <li class="one_third"><img src="images\hmshirt2.jpg" alt=""></li>
+        <li class="one_third"><img src="iphone1.jpg" alt=""></li>
       </ul>
     </figure>
     <!-- ################################################################################################ -->
@@ -159,7 +167,7 @@ Ekart is tied up with Apollo pharmacy, for the packages to be available for pick
     <!-- ################################################################################################ -->
     <h6 class="heading font-x3">Here Are Your Favourite Products</h6>
     <p class="btmspace-30">Locker services in stores and supermarkets running for all hours, was introduced first in the country by Ekart.</p>
-    <footer><a class="btn" href="product.php">All Products &raquo;</a></footer>
+    <footer><a class="btn" href="product1.php">All Products &raquo;</a></footer>
     <!-- ################################################################################################ -->
   </article>
 </div>
@@ -213,7 +221,7 @@ Ekart is tied up with Apollo pharmacy, for the packages to be available for pick
         <p class="right bold">Sir Richard Branson / CEO</p>
       </li>
       <li class="one_half borderedbox inspace-15">
-        <blockquote>“Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.”</blockquote>
+        <blockquote style="font-size: 16.14px;">“Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.”</blockquote>
         <p class="right bold">Steve Jobs / CEO</p>
       </li>
     </ul>
@@ -223,12 +231,12 @@ Ekart is tied up with Apollo pharmacy, for the packages to be available for pick
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper bgded overlay light" style="background-image:url('people-2557483_1280.jpg');">
+<div class="wrapper bgded overlay light" id="profiles" style="background-image:url('people-2557483_1280.jpg');">
   <article class="hoc container clear"> 
     <!-- ################################################################################################ -->
     <div class="sectiontitle">
-      <h3 class="heading">Malesuada eget lacus</h3>
-      <p>Ut auctor nulla ac mauris et nibh quis metus proin sed libero.</p>
+      <h2 class="heading">Our Profiles</h2>
+      <p>People Behind This Project.</p>
     </div>
     <figure>
       <ul class="nospace group">
@@ -275,14 +283,18 @@ Ekart is tied up with Apollo pharmacy, for the packages to be available for pick
     <div class="one_third">
       <h6 class="heading">Mail Us</h6>
       <p class="nospace btmspace-30">You Can Contact Us At Any Time.We Are Here For YOU.</p>
-      <form method="post" action="#">
-        <fieldset>
-          <legend>Newsletter:</legend>
-          <input class="btmspace-15" type="text" value="" placeholder="Name">
-          <input class="btmspace-15" type="text" value="" placeholder="Email">
-          <button type="submit" value="submit">Submit</button>
-        </fieldset>
-      </form>
+      <form action="mailer/index.php" method="get">
+
+  <input  class="form-control" type="text" id="name" name="name" placeholder="Enter Your Name"><br>
+  <input  class="form-control" type="email" id="email" name="email" placeholder="Enter Your Email"><br>
+  <textarea name="message" placeholder="Enter Your Message" style="width: 300px;color: black;"></textarea><br>
+  <button type="submit" id="btn">Submit</button>
+</form>
+<script type="text/javascript">
+  $(function(){
+     localStorage['role']="user";
+  })
+</script>
     </div>
     <div class="one_third">
       <h6 class="heading">Address</h6>
@@ -409,12 +421,7 @@ Ekart is tied up with Apollo pharmacy, for the packages to be available for pick
         <span class="input-group-addon"></span>
       <input type="role" name="role" placeholder="Role" id="id2" class="form-control" required="">
     </div>
-    </div>
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" name="">Please Accept Terms and Conditions<a href="terms.html">Terms and Conditions</a>
-      </label>
-    </div>
+    </div><br>
     <button type="submit" name="submit" class="btn btn-success" id="btn">Register</button>
   </form>
   <script type="text/javascript">
